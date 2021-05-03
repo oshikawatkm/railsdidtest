@@ -1,6 +1,6 @@
 FROM ruby:3.0.0
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
-RUN apt-get install -y cron
+RUN apt-get install -y cron git
 RUN mkdir /railsdidtest
 WORKDIR /railsdidtest
 COPY Gemfile /railsdidtest/Gemfile
